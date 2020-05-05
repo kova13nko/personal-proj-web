@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Индивидуальный сайт</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/darkmodechecker.js"></script>
+
+    <script>
+        $(function() {
+            // метод cycle
+            $('.btn').click(function() {
+                var action = $(this).attr('data-action');
+                if (action.indexOf('to') >= 0) {
+                    var action = parseInt(action.substring(3)) - 1;
+                }
+                $('#carousel').carousel(action);
+            });
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"> </script>
+
+
+
+
+    <div class="container">
+
+        <div>
+            <button id="theme-toggle" onclick="modeSwitcher()"></button>
+            <h1 id="h1text1">Максим Коваленко</h1>
+            <h2 id="h2text1">персональный сайт</h2>
+
+
+            <div id="buttons">
+                <div id="calltoaction"><a href=#h2text1 class="icon" target="_blank">
+                        <h5 id="calltoactiontext">Узнать больше</h5>
+                    </a></div>
+                <div id="icons_block">
+                    <div id="dribbble"><a href="http://dribbble.com/kova13nko" target="_blank" class="icon"></a></div>
+                    <div id="inst"><a href="http://instagram.com/maxonly1" target="_blank" class="icon"></a></div>
+                    <div id="mail"><a href="mailto:m.kova13nko@gmail.com" class="icon"></a></div>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="face1"></div>
+        </div>
+    </div>
+    <br>
+
+
+
+    <div class="container2" id="block1">
+        <h3 class="h3text2">3 моих самых главных качества:</h3>
+        <div id="cards-stack" class=" container3">
+            <div id="card1" class="cards">
+                <div class="card_icon" id="empathy"></div>
+                <h4 class="card_text">Эмпатия</h4>
+            </div>
+            <div id="card2" class="cards">
+                <div class="card_icon" id="responsiveness"></div>
+                <h4 class="card_text">Отзывчивость</h4>
+            </div>
+
+            <div id="card3" class="cards">
+                <div class="card_icon" id="impulsiveness"></div>
+                <h4 class="card_text">Импульсивность</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="block2" class="container2">
+        <h3 class="h3text2">3 моих настроения:</h3>
+        <div class="container3">
+            <div class="photos">
+                <div class="photocards"><img src="images/happy.jpg" alt="happy">
+                    .</div>
+                <h4>Весёлое</h4>
+            </div>
+            <div class="photos">
+                <div class="photocards"><img src="images/sad.jpg" alt="sad">
+                </div>
+                <h4>Грустное</h4>
+            </div>
+            <div class="photos">
+                <div class="photocards"> <img src="images/rn.jpg" alt="right now"></div>
+                <h4>Сейчас</h4>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="block3" class="container2">
+        <h3 class="h3text2">Моя любимая цитата:</h3>
+        <div class="container3">
+            <div id="pinkfloyd"><img src="images/pinkfloyd.jpg" alt="pink floyd"></div>
+
+            <div id="quote_block">
+                <h4 class="quote">“And then one day you find<br>
+                    ten years have got behind you.<br>
+                    No one told you when to run, <br>
+                    You missed the starting gun”</h4>
+                <h4 id="h4text1">Pink Floyd – Time</h4>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="block4" class="container2">
+        <h3 class="h3text2">Мои оценки за прошлый семестр:</h3>
+        <div class="container3">
+            <div id="tablica">
+
+                <table>
+                    <tbody>
+
+                        <tr>
+                            <th>
+                                Название предмета
+                            </th>
+                            <th>
+                                Преподаватель
+                            </th>
+                            <th>
+                                Оценка
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Компьютерная графика
+                            </td>
+                            <td>
+                                Сидоренко Елена Сергеевна
+                            </td>
+                            <td>
+                                94
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Проектирование баз данных
+                            </td>
+                            <td>
+                                Симонова Ольга Геннадьевна
+                            </td>
+                            <td>
+                                100
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Компьютерные сети
+                            </td>
+                            <td>
+                                Трубаев Александр Иванович
+                            </td>
+                            <td>
+                                96
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Численные методы
+                            </td>
+                            <td>
+                                Матюшенко Николай Васильевич
+                            </td>
+                            <td>
+                                92
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Основы компьютерной алгебры
+                            </td>
+                            <td>
+                                Сидоренко Елена Сергеевна
+                            </td>
+                            <td>
+                                95
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                История науки и техники
+                            </td>
+                            <td>
+                                Ларин Андрей Алексеевич
+                            </td>
+                            <td>
+                                85
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Интеллектуальный анализ данных
+                            </td>
+                            <td>
+                                Мартыненко Геннадий Юрьевич
+                            </td>
+                            <td>
+                                98
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Моделирование в CAD-системах
+                            </td>
+                            <td>
+                                Ницын Дмитрий Александрович
+                            </td>
+                            <td>
+                                93
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Физ. воспитание
+                            </td>
+                            <td>
+                                Дегтярёва Ирина Викторовна
+                            </td>
+                            <td>
+                                64
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="block5" class="container2">
+        <h3 class="h3text2">Хвастаюсь своими фоточками:</h3>
+        <div class="container3">
+            <!-- Bootstrap 4 -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-fluid" src="images/1.jpg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="images/2.jpg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="images/3.jpg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="images/4.jpg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="images/5.jpg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="images/6.jpg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid" src="images/7.jpg" alt="...">
+                    </div>
+                </div>
+                <!-- Элементы управления -->
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="block6" class="container2">
+        <h3 class="h3text2">Фильмы и сериалы, которые мне нравятся:</h3>
+        <div class="container3">
+            <div class="movies">
+                <div class="photocards">
+
+                    <img src="images/interstellar2.jpg" alt="Interstellar">
+                    <div class="blocText">
+                        <div class="text"><a href="https://rezka.ag/films/fiction/2259-interstellar-2014.html" target="_blank" class="movie_link">
+                                <h2>Смотреть</h2>
+                            </a></div>
+                    </div>
+
+                </div>
+                <h4 class="movietext">Интерстеллар</h4>
+            </div>
+            <div class="movies">
+                <div class="photocards">
+
+                    <img src="images/sexed.jpg" alt="Sex education">
+                    <div class="blocText">
+                        <div class="text"><a href="http://hdseria.tv/serialy-2019/513-polovoe-vospitanie-1-sezon.html" target="_blank" class="movie_link">
+                                <h2>Смотреть</h2>
+                            </a></div>
+                    </div>
+
+                </div>
+                <h4 class="movietext">Половое воспитание</h4>
+            </div>
+            <div class="movies">
+                <div class="photocards">
+
+                    <img src="images/rick.jpg" alt="Rick and Morty">
+                    <div class="blocText">
+                        <div class="text"><a href="https://filmix.co/fantastiks/81412-rik-i-morti-serial-2013.html" target="_blank" class="movie_link">
+                                <h2>Смотреть</h2>
+                            </a></div>
+                    </div>
+
+                </div>
+                <h4 class="movietext">Рик и Морти</h4>
+            </div>
+
+
+            <div class="movies">
+                <div class="photocards">
+
+                    <img src="images/hp.jpg" alt="Harry Potter and the Prisoner of Azkaban">
+                    <div class="blocText">
+                        <div class="text"><a href="https://rezka.ag/films/fantasy/1045-garri-potter-i-uznik-azkabana-2004.html" class="movie_link" target="_blank">
+                                <h2>Смотреть</h2>
+                            </a></div>
+                    </div>
+
+                </div>
+                <h4 class="movietext">Гарри Поттер и Узник Азкабана</h4>
+            </div>
+            <div class="movies">
+                <div class="photocards">
+
+                    <img src="images/sw.jpg" alt="Star Wars Episode 3">
+                    <div class="blocText">
+                        <div class="text"><a href="https://filmix.co/fantastiks/4049-zvezdnye-voyny-epizod-3-mest-sithov-star-wars-episode-iii-revenge-of-the-sith-2005.html" class="movie_link" target="_blank">
+                                <h2>Смотреть</h2>
+                            </a></div>
+                    </div>
+
+                </div>
+                <h4 class="movietext">Звёздные войны: Эпизод III</h4>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div id="block7" class="container2">
+        <h3 class="h3text2">Тут должна быть 3D-моделька:</h3>
+        <div class="container3">
+            <div class="sketchfab-embed-wrapper">
+                <iframe title="A 3D model" src="https://sketchfab.com/models/68931e89ad5649dfb30447c4dfa4e38d/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                    <a href="https://sketchfab.com/3d-models/andre-lens-68931e89ad5649dfb30447c4dfa4e38d?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Andre Lens</a>
+                    by <a href="https://sketchfab.com/geoffreymarchal?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Geoffrey Marchal</a>
+                    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/darkmode.js"></script>
+</body>
