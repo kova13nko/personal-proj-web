@@ -278,7 +278,6 @@
      margin-top: var(--gutter1);
      margin-bottom: var(--gutter3);
      position: relative;
-     max-width: 696px;
      color: var(--secondary);
 
  }
@@ -555,19 +554,19 @@
 
 
 
-#pinkfloyd{
+ #pinkfloyd {
      overflow: hidden;
-}
+ }
 
-#pinkfloyd img{
-          
+ #pinkfloyd img {
+
      width: 100%;
      transition: .75s;
-}
+ }
 
 
  #pinkfloyd:hover img {
-   transform: rotate(2deg) scale(1.2);
+     transform: rotate(2deg) scale(1.2);
 
  }
 
@@ -696,8 +695,8 @@
      }
 
      .container {
-         margin-left: 48px;
-         margin-right: 48px;
+         margin-left: 16px;
+         margin-right: 16px;
          padding: 0;
      }
 
@@ -729,6 +728,11 @@
          margin-right: var(--gutter3);
          margin-left: var(--gutter3);
          margin-bottom: var(--gutter3);
+     }
+
+     #h2text1,
+     #h1text1 {
+         width: 204px;
      }
 
      #calltoaction {
@@ -858,6 +862,8 @@
      }
 
 
+
+
  }
 
 
@@ -868,6 +874,12 @@
          max-width: 724px;
          margin-left: auto;
          margin-right: auto;
+     }
+
+     #h2text1,
+     #h1text1 {
+         width: 396px;
+         margin-right: 16px;
      }
 
      .container3 {
@@ -1028,6 +1040,11 @@
          .container3 {
              flex-direction: row;
              max-width: 1140px;
+         }
+
+         #h2text1,
+         #h1text1 {
+             width: 696px;
          }
 
          #block1 {
